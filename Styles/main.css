@@ -1,0 +1,77 @@
+@import 'https://fonts.google.com/specimen/Alata';
+@import 'https://fonts.google.com/specimen/Josefin+Sans';
+.page-header-wrapper {
+  height: 80vh;
+  background: url("../images/desktop/image-hero.jpg") no-repeat;
+  background-size: cover;
+}
+.page-header-wrapper .page-header {
+  width: 80%;
+  margin: 0 auto;
+}
+.page-header-wrapper .page-header .page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+.page-header-wrapper .page-header .page-navigation #toggler {
+  display: none;
+}
+.page-header-wrapper .page-header .page-navigation h2 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+.page-header-wrapper .page-header .page-navigation .navigation-links a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  margin: 0 15px;
+}
+.page-header-wrapper .page-header .page-navigation .navigation-links a:hover {
+  text-decoration: #fff underline;
+}
+.page-header-wrapper .page-header .page-motto {
+  width: 40%;
+  font-size: 50px;
+  padding: 10px 25px;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: white;
+  border: solid 2px #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 340px) and (max-width: 650px) {
+  .page-header-wrapper {
+    height: 90vh;
+    background: url(../images/mobile/image-hero.jpg) no-repeat;
+  }
+  .page-header-wrapper .page-header {
+    width: 95%;
+  }
+  .page-header-wrapper .page-header .page-navigation {
+    height: 100px;
+  }
+  .page-header-wrapper .page-header .page-navigation #toggler {
+    display: block;
+  }
+  .page-header-wrapper .page-header .page-navigation #toggler #toggleCl {
+    display: none;
+  }
+  .page-header-wrapper .page-header .page-navigation .navigation-links {
+    display: none;
+  }
+  .page-header-wrapper .page-header .page-motto {
+    width: 80%;
+    height: 100%;
+    font-size: 30px;
+    margin: 60px auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

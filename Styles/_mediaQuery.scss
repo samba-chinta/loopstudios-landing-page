@@ -1,0 +1,27 @@
+@media screen and (min-width: 340px) and (max-width: 650px){
+  .page-header-wrapper{
+    height: 90vh;
+    background: url(../images/mobile/image-hero.jpg) no-repeat;
+    .page-header{
+      width: 95%;
+      .page-navigation{
+        height: 100px;
+        #toggler{
+          display: block;
+          #toggleCl{
+            display: none;
+          }
+        }
+        .navigation-links{
+          display: none;
+        }
+      }
+      .page-motto{
+        width: 80%;
+        height: 100%;
+        font-size: 30px;
+        margin: 60px auto;
+      }
+    }
+  }
+}

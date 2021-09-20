@@ -1,0 +1,38 @@
+@import 'https://fonts.google.com/specimen/Alata';
+@import 'https://fonts.google.com/specimen/Josefin+Sans';
+
+
+// colors mixin
+@mixin color-chooser($color) {
+  @if $color == "White" {
+    color: hsl(0, 0%, 100%);
+  }
+  @if $color == "Black" {
+    color: hsl(0, 0%, 0%);
+  }
+  @if $color == "Dark Grey" {
+    color: hsl(0, 0%, 55%);
+  }
+  @if $color == "Very Dark Grey" {
+    color: hsl(0, 0%, 41%);
+  }
+}
+
+//fonts and font-sizes
+@mixin fonts($family) {
+  @if $family == "Alata" {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+  }
+  @if $family == "Josefin Sans" {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+  }
+}
+
+//links
+@mixin hyperlinks($color) {
+  text-decoration: none;
+  font-size: 15px;
+  color: $color;
+}

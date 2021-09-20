@@ -1,0 +1,42 @@
+.page-header-wrapper{
+  height: 80vh;
+  background: url('../images/desktop/image-hero.jpg') no-repeat;
+  background-size: cover;
+  .page-header{
+    width: 80%;
+    margin: 0 auto;
+    .page-navigation{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 140px;
+      #toggler{
+        display: none;
+      }
+      h2{
+        @include color-chooser("White");
+        @include fonts("Josefin Sans");
+        font-size: 30px;
+      }
+      .navigation-links{
+        a{
+          @include hyperlinks(#fff);
+          @include fonts("Josefin Sans");
+          margin: 0 15px;
+          &:hover{
+            text-decoration: #fff underline;
+          }
+        }
+      }
+    }
+    .page-motto{
+      width: 40%;
+      font-size: 50px;
+      padding: 10px 25px;
+      @include fonts("Alata");
+      @include color-chooser("White");
+      border: solid 2px #fff;
+      text-transform: uppercase;
+    }
+  }
+}
