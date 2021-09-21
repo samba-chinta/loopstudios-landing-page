@@ -1,4 +1,4 @@
-@media screen and (min-width: 340px) and (max-width: 650px){
+@media screen and (min-width: 340px) and (max-width: 760px){
   .page-header-wrapper{
     height: 90vh;
     background: url(../images/mobile/image-hero.jpg) no-repeat;
@@ -10,6 +10,7 @@
           display: block;
           #toggleCl{
             display: none;
+            z-index: 9999;
           }
         }
         .navigation-links{
@@ -21,6 +22,50 @@
         height: 100%;
         font-size: 30px;
         margin: 60px auto;
+      }
+    }
+  }
+  .interactive-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 0;
+    img{
+      height: 300px;
+    }
+    .section-content{
+      // background-color: gray;
+      span{
+        width: 90%;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1100px) {
+  .page-header-wrapper{
+    .page-header{
+      .page-motto{
+        width: 60%;
+        // background-color: #000;
+      }
+    }
+  }
+  .interactive-section{
+    width: 100%;
+    grid-template-columns: repeat(2, 50% 50%);
+    .section-content{
+      span{
+        font-size: 30px;
+      }
+      p{
+        text-align: center;
       }
     }
   }

@@ -1,0 +1,13 @@
+.mobile-nav__display{
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 80%;
+  padding: 3px;
+  justify-content: space-around;
+  background-color: #000;
+  // z-index: -1;
+}

@@ -1,0 +1,27 @@
+.interactive-section{
+  display: grid;
+  grid-template-columns: repeat(2, 45% 50%);
+  width: 80%;
+  margin: 15vh auto;
+  img{
+    height: 400px;
+    // width: 50%;
+  }
+  .section-content{
+    align-self: flex-end;
+    padding: 50px 60px 0;
+    background-color: #fff;
+    span{
+      font-size: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      @include fonts('Josefin Sans');
+    }
+    p{
+      font-size: 15px;
+      line-height: 25px;
+      @include fonts('Alata');
+      @include color-chooser('Dark Grey');
+    }
+  }
+}
