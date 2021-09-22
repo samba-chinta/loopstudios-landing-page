@@ -1,0 +1,55 @@
+.creations{
+  display: block;
+  gap: 20px;
+  width: 80%;
+  margin: 10vh auto;
+  .creations-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    p{
+      font-size: 25px;
+      text-transform: uppercase;
+      @include fonts('Alata');
+    }
+    #see-more{
+      text-decoration: none;
+      color: hsl(0, 0%, 41%);
+      text-transform: uppercase;
+      margin: 0 15px 0 0;
+      @include fonts('Alata');
+      padding: 5px;
+      border: solid 2px hsl(0, 0%, 41%);
+      font-size: 12px;
+      letter-spacing: 1px;
+      &:active, &:hover{
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+  .images-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    gap: 10px;
+    .images{
+      position: relative;
+      img{
+        height: 400px;
+      }
+      span{
+        position: absolute;
+        bottom: 5%;
+        left: 40%;
+        transform: translate(-50%, -40%);
+        z-index: 999;
+        font-size: 25px;
+        color: #fff;
+        text-transform: uppercase;
+        @include fonts('Alata');
+      }
+    }
+  }
+}

@@ -46,6 +46,9 @@
       }
     }
   }
+  .creations{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 761px) and (max-width: 1100px) {
@@ -66,6 +69,18 @@
       }
       p{
         text-align: center;
+      }
+    }
+  }
+  .creations{
+    width: 90%;
+    .images{
+      width: 150px;
+      span{
+        font-size: 20px;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -40%);
       }
     }
   }
