@@ -36,3 +36,29 @@
   font-size: 15px;
   color: $color;
 }
+
+@mixin image-label {
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  z-index: 999;
+  color: #fff;
+  text-transform: uppercase;
+  @include fonts('Alata');
+}
+
+@mixin see_more__link {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  text-transform: uppercase;
+  @include fonts('Alata');
+  padding: 5px;
+  border: solid 2px hsl(0, 0%, 41%);
+  font-size: 12px;
+  letter-spacing: 1px;
+  &:active, &:hover{
+    background-color: #000;
+    color: #fff;
+    border: solid 2px #000;
+  }
+}

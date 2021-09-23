@@ -107,10 +107,10 @@
   font-weight: 400;
 }
 .creations .creations-header #see-more {
+  margin: 0 15px 0 0;
   text-decoration: none;
   color: dimgray;
   text-transform: uppercase;
-  margin: 0 15px 0 0;
   font-family: "Alata", sans-serif;
   font-weight: 400;
   padding: 5px;
@@ -121,6 +121,7 @@
 .creations .creations-header #see-more:active, .creations .creations-header #see-more:hover {
   background-color: #000;
   color: #fff;
+  border: solid 2px #000;
 }
 .creations .images-grid {
   display: grid;
@@ -135,18 +136,79 @@
   height: 400px;
 }
 .creations .images-grid .images span {
+  transform: translate(-50%, -40%);
+  font-size: 25px;
   position: absolute;
   bottom: 5%;
   left: 40%;
-  transform: translate(-50%, -40%);
   z-index: 999;
-  font-size: 25px;
   color: #fff;
   text-transform: uppercase;
   font-family: "Alata", sans-serif;
   font-weight: 400;
 }
 
+.creations-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 350px) and (max-width: 760px) {
+  .creations-mobile {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .creations-mobile .creations-header__mobile p {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+  }
+  .creations-mobile .images-grid__mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .creations-mobile .images-grid__mobile .images {
+    position: relative;
+  }
+  .creations-mobile .images-grid__mobile .images img {
+    width: 100%;
+    height: 200px;
+  }
+  .creations-mobile .images-grid__mobile .images .img-title {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    z-index: 999;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    transform: translate(-60%, 0%);
+    font-size: 20px;
+  }
+  .creations-mobile #see-more__mobile {
+    text-decoration: none;
+    color: dimgray;
+    text-transform: uppercase;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    padding: 5px;
+    border: solid 2px dimgray;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .creations-mobile #see-more__mobile:active, .creations-mobile #see-more__mobile:hover {
+    background-color: #000;
+    color: #fff;
+    border: solid 2px #000;
+  }
+}
 @media screen and (min-width: 340px) and (max-width: 760px) {
   .page-header-wrapper {
     height: 90vh;

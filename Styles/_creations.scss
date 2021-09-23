@@ -14,19 +14,8 @@
       @include fonts('Alata');
     }
     #see-more{
-      text-decoration: none;
-      color: hsl(0, 0%, 41%);
-      text-transform: uppercase;
       margin: 0 15px 0 0;
-      @include fonts('Alata');
-      padding: 5px;
-      border: solid 2px hsl(0, 0%, 41%);
-      font-size: 12px;
-      letter-spacing: 1px;
-      &:active, &:hover{
-        background-color: #000;
-        color: #fff;
-      }
+      @include see_more__link;
     }
   }
   .images-grid{
@@ -40,15 +29,9 @@
         height: 400px;
       }
       span{
-        position: absolute;
-        bottom: 5%;
-        left: 40%;
         transform: translate(-50%, -40%);
-        z-index: 999;
         font-size: 25px;
-        color: #fff;
-        text-transform: uppercase;
-        @include fonts('Alata');
+        @include image-label;
       }
     }
   }

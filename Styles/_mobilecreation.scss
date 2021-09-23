@@ -1,0 +1,42 @@
+.creations-mobile{
+  display: none;
+}
+
+@media screen and (min-width: 350px) and (max-width: 760px) {
+  .creations-mobile{
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    .creations-header__mobile{
+      p{
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        @include fonts('Alata');
+      }
+    }
+    .images-grid__mobile{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .images{
+        position: relative;
+        img{
+          width: 100%;
+          height: 200px;
+        }
+        .img-title{
+          @include image-label;
+          transform: translate(-60%, 0%);
+          font-size: 20px;
+        }
+      }
+    }
+    #see-more__mobile{
+      @include see_more__link;
+      text-align: center;
+      margin: 20px auto;
+    }
+  }
+}
