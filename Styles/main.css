@@ -209,6 +209,49 @@
     border: solid 2px #000;
   }
 }
+.page_footer {
+  height: 200px;
+  background-color: #000;
+}
+.page_footer > div {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.page_footer > div .footer_section-1 p {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
+  font-size: 20px;
+}
+.page_footer > div .footer_section-1 .page_href .links {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.page_footer > div .footer_section-2 .social-media {
+  margin: 20px 0;
+}
+.page_footer > div .footer_section-2 .social-media a {
+  margin: 5px;
+}
+.page_footer > div .footer_section-2 .social-media a img {
+  width: 18px;
+  height: 18px;
+}
+.page_footer > div .footer_section-2 p {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
 @media screen and (min-width: 340px) and (max-width: 760px) {
   .page-header-wrapper {
     height: 90vh;
@@ -257,6 +300,10 @@
   }
 
   .creations {
+    display: none;
+  }
+
+  .page_footer {
     display: none;
   }
 }
