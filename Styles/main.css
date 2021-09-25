@@ -304,7 +304,26 @@
   }
 
   .page_footer {
-    display: none;
+    height: auto;
+  }
+  .page_footer > div {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .page_footer > div .footer_section-1 {
+    text-align: center;
+  }
+  .page_footer > div .footer_section-1 .page_href {
+    display: flex;
+    flex-direction: column;
+  }
+  .page_footer > div .footer_section-1 .page_href .links {
+    margin: 10px;
+  }
+  .page_footer > div .footer_section-2 {
+    text-align: center;
   }
 }
 @media screen and (min-width: 761px) and (max-width: 1100px) {
